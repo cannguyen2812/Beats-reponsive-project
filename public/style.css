@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{margin: 0 ; padding: 0;}
+body,html{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+}
+.slide-banner {
+    width: 100%;
+    position: relative;
+}
+.slide-banner .fit-image{
+    position: relative;
+    background-color: gray;
+    
+}
+.slide-banner .fit-image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section .viewmore{
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+section .viewmore .view{width: 200px;color: white;background-color: #58b3f0;border-radius: 20px;padding: 10px;border: white;cursor: pointer;}
+
+
+@media screen and (min-width: 240px) {
+    header{
+        width: 100%;
+    }
+    .menu-header{
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        height: 40px;
+        top: 0;
+        left: 0;
+        background-color: white;
+        border-bottom: 0.5px solid #9b9595;
+        text-align: center;
+    }
+    .menu-header span{
+        font-size: 14px;
+        
+    }
+    .slide-banner{
+        margin-top: 40px;
+    }
+    section{
+        width: 95%;
+        margin: auto;
+    }
+    section h1{
+    font-size: 36px;
+    text-align: center;
+    }
+    section .menu-product{
+    width: 100%;
+    }
+    section .menu-product .menu-bar {
+        
+    width: 100%;
+        
+    margin: auto;
+    }  
+    section .menu-product .menu-product-left{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    padding-top: 8px;
+    }
+    section .menu-product .menu-product-right{
+    background-color: #e9425f;
+    color: white;
+    text-align: end;
+    height: 50px;
+    padding-top: 10px;
+    }
+    section .slide-product{}
+    section .slide-product .my-slide{
+    width: 97%!important;
+    height: 100%;
+    box-shadow: 4px 4px 4px 4px #a7a1a1;
+    }
+    section .slide-product .my-slide .slide-image{
+
+    position: relative;
+
+    padding-top: 100%;
+
+    }
+    section .slide-product .my-slide .slide-image>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    }
+    section .slide-product .my-slide>h6{
+    font-weight: 400;
+    padding-left: 5px;
+    height: 50px;
+    }
+    section .slide-product .my-slide>p{font-style: italic;color: gray;font-weight: lighter;font-size: 14px;padding-left: 5px;}
+    
+    section .slide-product .my-slide .price{
+    width: 100%;
+    margin: auto;
+    }
+    section .slide-product .my-slide .price>span:first-child{
+        color: red;
+    }
+    section .slide-product .my-slide .price>span:nth-child(2){
+        text-decoration-line: line-through;
+        text-align: end;
+    }
+}    
